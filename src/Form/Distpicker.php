@@ -16,6 +16,13 @@ class Distpicker extends Field
     /**
      * @var array
      */
+    protected static $js = [
+        '@extension/dcat-admin-ext/distpicker/js/distpicker.min.js'
+    ];
+
+    /**
+     * @var array
+     */
     protected $columnKeys = ['province', 'city', 'district'];
 
     /**
@@ -97,11 +104,8 @@ $('#' + oid).attr('id', nid).distpicker({
   district: '$district'
 });
 EOT;
-        Admin::requireAssets('@dcat-admin-ext.distpicker');
 
-        $this->addVariables([
-            'id' => $id,
-        ]);
+        $this->addVariables(compact('id'));
 
         return parent::render();
     }

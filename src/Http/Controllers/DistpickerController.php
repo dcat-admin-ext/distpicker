@@ -13,6 +13,6 @@ class DistpickerController extends Controller
         return $content
             ->title('Title')
             ->description('Description')
-            ->body(Admin::view('abovesky.distpicker::index'));
+            ->body(Admin::view('dcat-admin-ext.distpicker::index'));
     }
 }

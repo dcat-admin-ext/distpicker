@@ -2,19 +2,12 @@
 
 namespace DcatAdminExt\Distpicker;
 
-use DcatAdminExt\Distpicker\Form\Distpicker;
+use Dcat\Admin\Admin;
 use Dcat\Admin\Extend\ServiceProvider;
 use Dcat\Admin\Form;
 
 class DistpickerServiceProvider extends ServiceProvider
 {
-	protected $js = [
-        'js/distpicker.min.js',
-    ];
-	protected $css = [
-		'css/index.css',
-	];
-
 	public function register()
 	{
 		//
@@ -23,8 +16,10 @@ class DistpickerServiceProvider extends ServiceProvider
 	public function init()
 	{
 		parent::init();
-        Form::extend('distpicker', Distpicker::class);
 
+        Admin::booting(function () {
+            Form::extend('distpicker', \DcatAdminExt\Distpicker\Form\Distpicker::class);
+        });
 	}
 
 	public function settingForm()
