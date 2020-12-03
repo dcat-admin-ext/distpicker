@@ -1,6 +1,6 @@
 <?php
 
-namespace Abovesky\Distpicker\Form;
+namespace DcatAdminExt\Distpicker\Form;
 
 use Dcat\Admin\Admin;
 use Dcat\Admin\Form\Field;
@@ -11,7 +11,7 @@ class Distpicker extends Field
     /**
      * @var string
      */
-    protected $view = 'abovesky.distpicker::select';
+    protected $view = 'dcat-admin-ext.distpicker::select';
 
     /**
      * @var array
@@ -97,7 +97,7 @@ $('#' + oid).attr('id', nid).distpicker({
   district: '$district'
 });
 EOT;
-        Admin::requireAssets('@abovesky.distpicker');
+        Admin::requireAssets('@dcat-admin-ext.distpicker');
 
         $this->addVariables([
             'id' => $id,

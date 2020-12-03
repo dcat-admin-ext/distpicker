@@ -1,6 +1,6 @@
 <?php
 
-namespace Abovesky\Distpicker\Http\Controllers;
+namespace DcatAdminExt\Distpicker\Http\Controllers;
 
 use Dcat\Admin\Layout\Content;
 use Dcat\Admin\Admin;

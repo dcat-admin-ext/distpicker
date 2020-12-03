@@ -1,9 +1,9 @@
 {
-    "name": "abovesky/distpicker",
-    "description": "Description...",
+    "name": "dcat-admin-ext/distpicker",
+    "description": "Dcat Admin 多级联动地址选择器",
     "type": "library",
-    "keywords": ["dcat-admin", "extension"],
-    "homepage": "https://github.com/abovesky/distpicker",
+    "keywords": ["dcat-admin", "extension", "distpicker"],
+    "homepage": "https://github.com/dcat-admin-ext/distpicker",
     "license": "MIT",
     "authors": [
         {
@@ -17,14 +17,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Abovesky\\Distpicker\\": "src/"
+            "DcatAdminExt\\Distpicker\\": "src/"
         }
     },
     "extra": {
-        "dcat-admin": "Abovesky\\Distpicker\\DistpickerServiceProvider",
+        "dcat-admin": "DcatAdminExt\\Distpicker\\DistpickerServiceProvider",
         "laravel": {
             "providers": [
-                "Abovesky\\Distpicker\\DistpickerServiceProvider"
+                "DcatAdminExt\\Distpicker\\DistpickerServiceProvider"
             ]
         }
     }

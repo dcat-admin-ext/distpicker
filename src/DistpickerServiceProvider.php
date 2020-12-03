@@ -1,8 +1,8 @@
 <?php
 
-namespace Abovesky\Distpicker;
+namespace DcatAdminExt\Distpicker;
 
-use Abovesky\Distpicker\Form\Distpicker;
+use DcatAdminExt\Distpicker\Form\Distpicker;
 use Dcat\Admin\Extend\ServiceProvider;
 use Dcat\Admin\Form;
 

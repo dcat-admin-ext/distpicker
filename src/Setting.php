@@ -1,6 +1,6 @@
 <?php
 
-namespace Abovesky\Distpicker;
+namespace DcatAdminExt\Distpicker;
 
 use Dcat\Admin\Extend\Setting as Form;
 
