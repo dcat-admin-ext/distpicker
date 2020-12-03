@@ -5,6 +5,7 @@ namespace DcatAdminExt\Distpicker;
 use Dcat\Admin\Admin;
 use Dcat\Admin\Extend\ServiceProvider;
 use Dcat\Admin\Form;
+use Dcat\Admin\Grid\Filter;
 
 class DistpickerServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,7 @@ class DistpickerServiceProvider extends ServiceProvider
 
         Admin::booting(function () {
             Form::extend('distpicker', \DcatAdminExt\Distpicker\Form\Distpicker::class);
+            Filter::extend('distpicker', \DcatAdminExt\Distpicker\Filter\DistpickerFilter::class);
         });
 	}
 
